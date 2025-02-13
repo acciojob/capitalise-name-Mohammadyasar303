@@ -1,8 +1,9 @@
 //your JS code here. If required.
-function CapitaliseName() {
 	let input = document.getElementById("fname");
-	input.value = input.value.toUpperCase();
-}
+	input.addEventListener("blur",()=>{
+		let val = input.value;
+		input.value = val.toUpperCase();
+	})
 
 // let input = querySelector("input");
 
